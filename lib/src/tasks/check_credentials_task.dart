@@ -10,10 +10,10 @@ class CheckCredentialsTask extends LaunchTask {
     try {
       final isValid = await authTokenValidator.isValid();
       context.isLoggedIn = isValid;
-      return isValid ? TaskContinue() : TaskStop(NoCredentials());
+      return isValid ? const TaskContinue() : const TaskStop(NoCredentials());
     } catch (_) {
       context.isLoggedIn = false;
-      return TaskStop(NoCredentials());
+      return const TaskStop(NoCredentials());
     }
   }
 }

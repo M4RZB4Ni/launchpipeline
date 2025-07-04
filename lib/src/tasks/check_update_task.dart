@@ -12,7 +12,7 @@ class CheckUpdateTask extends LaunchTask {
     context.isForcedUpdate = serverInfo.isForced;
     context.updateUrl = serverInfo.updateUrl;
 
-    return TaskContinue();
+    return const TaskContinue();
   }
 }
 

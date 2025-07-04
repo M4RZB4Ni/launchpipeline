@@ -8,7 +8,7 @@ class CheckIlLegitimateDeviceTask implements LaunchTask {
   @override
   Future<TaskOutput> execute(LaunchContext context) async {
     final isIllegitimate = await _deviceLegitimateChecker.isDeviceIllegitimate();
-    return isIllegitimate ? TaskContinue() : TaskStop(IllegitimateDevice());
+    return isIllegitimate ? const TaskContinue() : const TaskStop(IllegitimateDevice());
   }
 }
 

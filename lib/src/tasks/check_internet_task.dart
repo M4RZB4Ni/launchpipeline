@@ -7,7 +7,7 @@ class CheckInternetTask extends LaunchTask {
 
   @override
   Future<TaskOutput> execute(LaunchContext context) async {
-    return await connectivityChecker.isNetworkAvailable() ? TaskContinue() : TaskStop(NoInternet());
+    return await connectivityChecker.isNetworkAvailable() ? const TaskContinue() : const TaskStop(NoInternet());
   }
 }
 

@@ -3,9 +3,13 @@ sealed class StopReason {
   const StopReason();
 }
 
-class NoCredentials extends StopReason {}
+class NoCredentials extends StopReason {
+  const NoCredentials();
+}
 
-class NotSignedUp extends StopReason {}
+class NotSignedUp extends StopReason {
+  const NotSignedUp();
+}
 
 class ForcedUpdate extends StopReason {
   const ForcedUpdate(this.updateUrl);
@@ -19,8 +23,14 @@ class OptionalUpdate extends StopReason {
   final String updateUrl;
 }
 
-class NoInternet extends StopReason {}
+class NoInternet extends StopReason {
+  const NoInternet();
+}
 
-class UnknownReason extends StopReason {}
+class UnknownReason extends StopReason {
+  const UnknownReason();
+}
 
-class IllegitimateDevice extends StopReason {}
+class IllegitimateDevice extends StopReason {
+  const IllegitimateDevice();
+}
