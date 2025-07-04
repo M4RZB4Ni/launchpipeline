@@ -1,15 +1,15 @@
 name: launchpipeline
 description: A Flutter package to handle launch tasks
 version: 1.0.0
-# repository: https://gitlab.com/next-top-tech/application/core/release/launchpipeline
+repository: https://gitlab.com/next-top-tech/application/core/release/launchpipeline
 
 environment:
-  sdk: '>=3.4.3 <4.0.0'
+  sdk: '>=3.4.1 <4.0.0'
 
-# Add regular dependencies here.
-dependencies:
-# path: ^1.8.0
 
 dev_dependencies:
-  lints: ^5.0.0
-  flutter_lints: ^5.0.0
+  lints: ^4.0.0
+  flutter_lints: ^4.0.0
+  test: ^1.25.8
+  mockito: ^5.4.4
+  build_runner: ^2.4.15
