@@ -23,7 +23,7 @@ Add `launchpipeline` to your `pubspec.yaml`:
 dependencies:
   launchpipeline:
     git:
-      url: https://gitlab.com/next-top-tech/application/core/release/launchpipeline
+      url: git@github.com:M4RZB4Ni/launchpipeline.git
       ref: latest_version
 ```
 
